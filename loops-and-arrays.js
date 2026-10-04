@@ -11,7 +11,11 @@
 // Vergadering om 17:00
 // ==========================================
 
-const meetingTimes = ['09:00', '10:30', '14:00', '15:30', '17:00'];
+//const meetingTimes = ['09:00', '10:30', '14:00', '15:30', '17:00'];
+ // for (let i = 0; i < meetingTimes.length; i++) {
+
+//      console.log("Vergadering om" + meetingTimes[i]);
+//  }
 
 
 // ==========================================
@@ -25,7 +29,11 @@ const meetingTimes = ['09:00', '10:30', '14:00', '15:30', '17:00'];
 // console.log(salaries) geeft [3360, 2467.5, 2940, 3675, 2940]
 // ==========================================
 
-const salaries = [3200, 2350, 2800, 3500, 2800];
+// const salaries = [3200, 2350, 2800, 3500, 2800];
+//for (let i = 0; i <= 100; i++);
+//const increased = salaries.map(n => n * 1.05);
+//console.log(increased);
+
 
 
 // ==========================================
@@ -37,7 +45,11 @@ const salaries = [3200, 2350, 2800, 3500, 2800];
 // console.log(birthYears) geeft [30, 28, 35, 22, 43]
 // ==========================================
 
-const birthYears = [1995, 1997, 1990, 2003, 1982];
+//const birthYear = [1995, 1997, 1990, 2003, 1982];
+//const currentYear = new Date().getFullYear();
+//for (let i = 0; i < birthYear.length; i++) {
+//    console.log(currentYear - birthYear[i]);
+//}
 
 
 // ==========================================
@@ -50,7 +62,17 @@ const birthYears = [1995, 1997, 1990, 2003, 1982];
 // console.log(leaveHours) geeft [12, 4.5, 4, 3.5, 1.5]
 // ==========================================
 
-const leaveHours = [6, 9, 2, 7, 3];
+//const leaveHours = [6, 9, 2, 7, 3];
+//const result = leaveHours.map(n => {
+//    if (n % 2 === 0) {
+//        return n * 2;   // even
+//    } else {
+//        return n * 0.5;   // oneven
+//    }
+//});
+
+//console.log(result);
+
 
 
 // ==========================================
@@ -68,5 +90,8 @@ const leaveHours = [6, 9, 2, 7, 3];
 // ==========================================
 
 const productionCodes = [" abC123  ", "  DEF456", "ghi789  ", "JKL012"];
+const cleaned = productionCodes.map(code  => code.trim().toUpperCase());
+console.log(cleaned);
+
 
 

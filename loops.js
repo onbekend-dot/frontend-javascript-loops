@@ -1,7 +1,10 @@
 // ==========================================
 // Opdracht 1. Maak een for loop die het volgende patroon in de terminal print:
 // Verwachte uitkomsten:
-// *
+
+   for(let i = 0; i < 5; i++) {
+   console.log('*'.repeat (i));
+//}
 // **
 // ***
 // ****
@@ -20,23 +23,39 @@
 // loop...
 // klaar!
 // ==========================================
+       for(let i = 1; i < 6; i++) {
+           if (i === 5) {
+               console.log("klaar");
+           }  else  {
+               console.log("loop");
+           }
+       }
 
 
 // ==========================================
-// Opdracht 3. Maak een for-loop die automatisch factuurnummers genereert in het formaat INV-0001, INV-0002, enzovoorts. Zorg ervoor dat je begint bij nummer 1 en dat de nummers oplopen. Er zijn in totaal 8 factuurnummers nodig.
+// Opdracht 3. Maak een for-loop die automatisch factuurnummers genereert in het formaat INV-0001, INV-0002, enzovoorts.
+// Zorg ervoor dat je begint bij nummer 1 en dat de nummers oplopen. Er zijn in totaal 8 factuurnummers nodig.
 
 // Verwachte uitkomst:
-// 'INV-0001'
-// 'INV-0002'
-// 'INV-0003'
-// 'INV-0004'
-// 'INV-0005'
-// 'INV-0006'
-// 'INV-0007'
-// 'INV-0008'
+// const number = ['INV-0001',
+//      'INV-0002' ,
+//      'INV-0003' ,
+//     'INV-0004' ,
+//     'INV-0005' ,
+//     'INV-0006' ,
+//      'INV-0007' ,
+//      'INV-0008' ,
+//      ];
 
 // ==========================================
+const numbers = [];
+const prefix = "INV-";
 
+for (let i = 1; i <= 8; i++) {
+    numbers.push(prefix + String(i).padStart(4, "0"));
+}
+
+console.log(numbers);
 // ==========================================
 // Opdracht 4. Schrijf een for-loop die van 9 tot en met 18 loopt en de uren logt.
 // - Bij 10:00 en 14:00 moet de tekst "Koffiepauze!" toegevoegd worden
@@ -44,16 +63,24 @@
 // - Bij 17:00 moet de tekst "Bijna klaar..." toegevoegd worden
 
 // Verwachte uitkomsten:
-// 9:00
-// 10:00
-// 11:00
-// 12:00 Lunchpauze!
-// 13:00
-// 14:00
-// 15:00
-// 16:00
-// 17:00 Bijna klaar...
-// 18:00
+
+  const uur = [ "9:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00" ];
+  for(let uur = 9; uur <= 18; uur++) {
+  if (uur === 10) {
+     console.log("10:00 + koffiepauze!");
+   } else  if (uur === 12) {
+        console.log("12:00 + lunchpauze");
+    } else if (uur === 17) {
+    console.log("17:00 = Bijna klaar");
+    }
+
+    console.log(`${uur}:00`);  }
+
+
+
+
+
+
 // ==========================================
 
 
@@ -61,7 +88,18 @@
 // Opdracht 5. Maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
 // Echter, vanaf het getal 3 komt er een > voor ieder getal te staan, en vanaf het getal 6 komt er >> voor ieder getal te staan.
 // Verwachte uitkomsten:
-// 0
+// 0              const getal = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ];
+                  for (let i =  0; i < 10; i++); {
+                      console.log(getal);
+
+                  if (i >= 6>) {
+                      console.log(">>" + i); }
+                  else if (i >= 3 ) {
+                      console.log(">" + i);
+                  } else {
+                      console.log(i);
+                  }
+}
 // 1
 // 2
 // > 3
@@ -72,7 +110,6 @@
 // >> 8
 // >> 9
 // ==========================================
-
 
 // ==========================================
 // Opdracht 6 (BONUS). Schrijf een for-loop die van 0 tot 100 loopt en de getallen print.
@@ -111,6 +148,29 @@
 // FizzBuzz
 // etc.
 // ==========================================
+
+const nummers = [];
+   for(let i = 1; i <= 100; i++) {
+    nummers.push(String(i));
+}
+
+for (let i = 1; i <= 100; i++) {
+
+    if (i % 3 === 0 && i % 5 === 0) {        //--delen door drie en vijf geeft nul terug
+        console.log("FizzBuzz");
+    } else if (i % 3 === 0) {                //--delen oor drie geeft nul terug
+        console.log("Fizz");
+    } else if (i % 5 === 0) {                //--delen oor vijf geeft nul terug
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+
+}
+
+
+
+
 
 
 
