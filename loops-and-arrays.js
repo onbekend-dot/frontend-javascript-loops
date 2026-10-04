@@ -89,7 +89,7 @@
 
 // ==========================================
 
-const productionCodes = [" abC123  ", "  DEF456", "ghi789  ", "JKL012"];
+const productionCodes = [" aBC123  ", "  DEF456", "ghi789  ", "JKL012"];
 const cleaned = productionCodes.map(code  => code.trim().toUpperCase());
 console.log(cleaned);
 
