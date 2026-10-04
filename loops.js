@@ -25,9 +25,9 @@
 // ==========================================
        for(let i = 1; i < 6; i++) {
            if (i === 5) {
-               console.log("klaar");
-           }  else  {
                console.log("loop");
+           }  else  {
+               console.log("klaar");
            }
        }
 
@@ -158,9 +158,9 @@ for (let i = 1; i <= 100; i++) {
 
     if (i % 3 === 0 && i % 5 === 0) {        //--delen door drie en vijf geeft nul terug
         console.log("FizzBuzz");
-    } else if (i % 3 === 0) {                //--delen oor drie geeft nul terug
-        console.log("Fizz");
-    } else if (i % 5 === 0) {                //--delen oor vijf geeft nul terug
+    } else if (i % 3 === 0) {                //--delen door drie geeft nul terug
+        console.log("Fizz");d
+    } else if (i % 5 === 0) {                //--delen door vijf geeft nul terug
         console.log("Buzz");
     } else {
         console.log(i);
