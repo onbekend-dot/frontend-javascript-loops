@@ -25,9 +25,9 @@
 // ==========================================
        for(let i = 1; i < 6; i++) {
            if (i === 5) {
-               console.log("loop");
-           }  else  {
                console.log("klaar");
+           }  else  {
+               console.log("loop");
            }
        }
 
