@@ -152,7 +152,8 @@
 
 
 // ==========================================
-// Opdracht 4b. Breid je script uit door het percentage op te slaan in de 'salaryIncrease'-property van ieder object in de array.
+// Opdracht 4b. Breid je script uit door het percentage op te slaan in de 'salaryIncrease'-property van ieder
+// object in de arrays.
 
 // Verwachte uitkomst:
 // Vóór het script zie je de originele objecten,
